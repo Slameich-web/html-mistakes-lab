@@ -1,0 +1,28 @@
+1. Базовая структура
+Нет meta charset="UTF-8" → могут быть проблемы с кириллицей
+Нет viewport → ломается адаптив на мобильных
+Язык (lang="ru") не указан → плохо для доступности и SEO
+
+2. Семантика
+Вместо <div class="header"> → <header>
+Вместо <div id="main"> → <main>
+Навигация без <nav> → <div>Главная</div> → <nav><a href="/">Главная</a></nav>
+Блоки без <section>/<article>
+
+3. Доступность (a11y)
+У изображения нет alt → <img src="product.png" alt="Фото продукта">
+У формы нет label → поля ввода недоступны для скринридеров
+Нет aria-label у кнопки → <button aria-label="Отправить заявку">
+
+4. Формы
+Нет form → обернуть поля в <form>
+Нет type="tel" для телефона → <input type="tel">
+Нет атрибута name у полей → <input name="phone">
+Кнопка без type="submit" → <button type="submit">
+
+5. Метаданные
+Нет meta description → плохо для SEO
+
+6. Прочее
+Нет нормального заголовка (h1-h6)
+Footer без <footer>
